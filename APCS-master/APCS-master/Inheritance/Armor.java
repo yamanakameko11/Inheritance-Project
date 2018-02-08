@@ -5,12 +5,14 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+import java.util.ArrayList;
 public class Armor extends Item implements DefenseCommands
 {
-    public Armor(String name, ArrayList<Integer> stats){
+    public Armor(String name){
         super(name, stats);
     }
     
     public boolean blocked(){
+        
     }
 }

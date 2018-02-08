@@ -9,11 +9,11 @@ import java.util.ArrayList;
 public class Item implements ItemInterface{
     //Implemented in your own way
     private String name;
-    private ArrayList stats = new ArrayList(); 
+    private ArrayList stats; // HP, STR
 
-    public Item(String name, ArrayList<Integer> stats){
+    public Item(String name, ArrayList stats){
         this.name = name;
-        this.stats = stats;
+        this.stats = new ArrayList();
     }
 
     public String getName(){

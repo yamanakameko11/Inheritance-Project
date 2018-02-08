@@ -5,12 +5,22 @@
  * @author (your name here)
  * @version (version number or date here)
  */
+import java.util.ArrayList;
 public abstract class Character implements CharacterInterface
 {
-    public String name;
-    private ArrayList stats = new ArrayList(); 
-    
+    private String name;
+    private ArrayList stats; // HP, STR, LVL
+
     public Character(String name, ArrayList stats){
-        
+        this.name = name;
+        this.stats = new ArrayList();
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public ArrayList getStats(){
+        return stats;
     }
 }
