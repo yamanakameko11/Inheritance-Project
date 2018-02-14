@@ -2,6 +2,6 @@
 comment0.target=Player
 comment1.params=name\ stats
 comment1.target=Player(java.lang.String,\ java.util.ArrayList)
-comment2.params=
-comment2.target=void\ setName()
+comment2.params=name
+comment2.target=java.lang.String\ setName(java.lang.String)
 numComments=3

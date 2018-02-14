@@ -11,4 +11,5 @@ public class Enemy extends Character
     public Enemy(String name, ArrayList stats){
         super(name, stats);
     }
+    
 }

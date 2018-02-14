@@ -11,10 +11,17 @@ public class Player extends Character
 {
     Scanner scanner = new Scanner(System.in);
     public Player(String name, ArrayList stats){
-        super(name, stats);
+        super(name, stats); // LVL, HP ,MP, STR, INT
+        stats.add(1);
+        stats.add(10);
+        stats.add(10);
+        stats.add(5);
+        stats.add(5);
     }
     
-    public void setName(){
-        
+    public String setName(){
+        name = scanner.next("Please enter your name").upper();
+        return name;
     }
+    
 }
