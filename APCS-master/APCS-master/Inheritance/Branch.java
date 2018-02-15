@@ -7,5 +7,7 @@
  */
 public class Branch extends Weapon
 {
-    
+    public Weapon(String name, ArrayList stats){
+        super(name, stats);
+    }
 }

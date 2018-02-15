@@ -21,7 +21,7 @@ public class Weapon extends Item implements WeaponInterface
     }
 
     public boolean parry(){
-        if(Item.getStats.get(4) < Enemy.getStats.get(3)){
+        if(){
         }
     }
 }

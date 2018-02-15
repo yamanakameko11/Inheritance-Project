@@ -1,14 +1,14 @@
 
 /**
- * Write a description of class MoonSocks here.
+ * Write a description of class Hat here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
 import java.util.ArrayList;
-public class MoonSocks extends Armor
+public class Halo extends Armor
 {
-   public MoonSocks(String name, ArrayList stats){
+   public Halo(String name, ArrayList stats){
         super(name, stats);
     }
 }
