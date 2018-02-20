@@ -8,8 +8,12 @@
 import java.util.ArrayList;
 public class Armor extends Item implements DefenseCommands
 {
+    int str;
+    int HP;
     public Armor(String name, ArrayList stats){
         super(name, stats); // LVL, HP ,MP, STR, INT
+        stats.add(str);
+        stats.add(HP);
     }
     
     public boolean blocked(){

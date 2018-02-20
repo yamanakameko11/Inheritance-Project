@@ -5,9 +5,12 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+import java.util.ArrayList;
 public class Branch extends Weapon
 {
-    public Weapon(String name, ArrayList stats){
+    public Branch(String name, ArrayList stats){
         super(name, stats);
+        stats.add(0, 4);
+        stats.add(1, 15);
     }
 }

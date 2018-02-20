@@ -7,5 +7,8 @@
  */
 public class Knife extends Weapon
 {
-    
+    public Knife(String name, ArrayList stats){
+        super(name, stats);
+        stats.add(0, 
+    }
 }

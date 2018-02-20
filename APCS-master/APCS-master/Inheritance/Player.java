@@ -9,7 +9,11 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class Player extends Character
 {
-    Scanner scanner = new Scanner(System.in);
+    int LVL;
+    double HP;
+    double MP;
+    int STR;
+    int INT;
     public Player(String name, ArrayList stats){
         super(name, stats); // LVL, HP ,MP, STR, INT
         stats.add(1);
@@ -20,6 +24,7 @@ public class Player extends Character
     }
     
     public String setName(){
+        Scanner scanner = new Scanner(System.in);
         name = scanner.next("Please enter your name").upper();
         return name;
     }
