@@ -4,4 +4,6 @@ comment1.params=name\ stats
 comment1.target=Player(java.lang.String,\ java.util.ArrayList)
 comment2.params=
 comment2.target=void\ playerName()
-numComments=3
+comment3.params=Food
+comment3.target=void\ consume(Item)
+numComments=4

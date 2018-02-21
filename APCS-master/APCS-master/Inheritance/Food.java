@@ -6,7 +6,7 @@
  * @version (a version number or a date)
  */
 import java.util.ArrayList;
-public class Food extends Item
+abstract class Food extends Item
 {
     int HP;
     int MP;
@@ -16,6 +16,4 @@ public class Food extends Item
         stats.add(MP);
     }
     
-    public void eat(){
-    }
 }

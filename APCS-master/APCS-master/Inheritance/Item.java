@@ -6,7 +6,7 @@
  * @version 1.2
  */
 import java.util.ArrayList;
-public class Item implements ItemInterface{
+abstract class Item implements ItemInterface{
     //Implemented in your own way
     private String name;
     private ArrayList stats; // HP, DMG

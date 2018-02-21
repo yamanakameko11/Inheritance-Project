@@ -35,4 +35,7 @@ public class Player extends Character
             } else{ state = false;}
         }
     }
+    
+    public void consume(Item Food){
+    }
 }

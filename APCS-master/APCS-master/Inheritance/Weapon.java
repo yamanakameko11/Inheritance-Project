@@ -7,7 +7,7 @@
  */
 import java.util.ArrayList;
 import java.lang.String;
-public class Weapon extends Item implements WeaponInterface
+abstract class Weapon extends Item implements WeaponInterface
 {
     private int atk;
     private double HP;
