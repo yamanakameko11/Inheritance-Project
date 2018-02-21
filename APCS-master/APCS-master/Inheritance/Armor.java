@@ -17,11 +17,11 @@ public class Armor extends Item implements DefenseCommands
     }
     
     public boolean blocked(){
-        int x = 1 + (int)(Math.random() * 10); //70% chance of blocking all attacks
-        if (x > 7){
-            return false;
-        } else{
+        int x = str + (int)(Math.random() * (HP*2)); //70% chance of blocking all attacks
+        if (x > (str/2)){
             return true;
+        } else{
+            return false;
         }
     }
 }

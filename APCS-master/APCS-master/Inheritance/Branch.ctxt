@@ -2,4 +2,6 @@
 comment0.target=Branch
 comment1.params=name\ stats
 comment1.target=Branch(java.lang.String,\ java.util.ArrayList)
-numComments=2
+comment2.params=
+comment2.target=void\ fireLance()
+numComments=3

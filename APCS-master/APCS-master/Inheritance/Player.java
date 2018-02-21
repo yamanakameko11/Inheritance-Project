@@ -10,8 +10,8 @@ import java.util.ArrayList;
 public class Player extends Character
 {
     int LVL;
-    double HP;
-    double MP;
+    int HP;
+    int MP;
     int STR;
     int INT;
     public Player(String name, ArrayList stats){
@@ -21,12 +21,18 @@ public class Player extends Character
         stats.add(10);
         stats.add(5);
         stats.add(5);
+        name = "";
     }
-    
-    public String setName(){
-        Scanner scanner = new Scanner(System.in);
-        name = scanner.next("Please enter your name").upper();
-        return name;
+
+    public void playerName(){
+        Scanner ask = new Scanner(System.in);
+        boolean state = false;
+        while (!state){
+            name = ask.next("ENTER YOUR NAME: ").toUpperCase();
+            String confirm = ask.next("Your name is " + name + ", correct? Y/N").toUpperCase();
+            if(confirm.equals("Y") || confirm.equals("YES")){
+                state = true;
+            } else{ state = false;}
+        }
     }
-    
 }

@@ -17,5 +17,6 @@ public class Borg extends Enemy // enemy is an amalgamation of little fat bugs
         stats.add(0);
         stats.add(5);
         stats.add(1);
+        name = "BORG";
     }
 }

@@ -10,5 +10,7 @@ public class Halo extends Armor
 {
    public Halo(String name, ArrayList stats){
         super(name, stats);
+        stats.add(0, 6);
+        stats.add(1, 50);
     }
 }

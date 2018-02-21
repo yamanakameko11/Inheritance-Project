@@ -10,17 +10,14 @@ public class FatherOfBorg extends Enemy
 {
     public FatherOfBorg(String name, ArrayList stats){
         super(name, stats);
-        stats.add(1 + (int)(Math.random() * 5));
-        stats.add(8);
-        stats.add(4);
-        stats.add(8);
-        stats.add(4);
+        stats.add(0, 1 + (int)(Math.random() * 5));
+        stats.add(1, 8);
+        stats.add(2, 4);
+        stats.add(3, 8);
+        stats.add(4, 4);
+        name = "FATHER OF BORG";
     }
     
     public void flex(){
-        Player player = new Player();
-        if (player.getStats(4) <= FatherOfBorg.getStats(4)){
-            Player.getStats(1) -= Player.getStats(4)-FatherOfBorg.getStats(4);
-        }
     }
 }

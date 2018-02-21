@@ -13,4 +13,8 @@ public class Branch extends Weapon
         stats.add(0, 4);
         stats.add(1, 15);
     }
+    
+    public void fireLance(){ // attack deals double damamge, loses half weapon HP
+        int x;
+    }
 }

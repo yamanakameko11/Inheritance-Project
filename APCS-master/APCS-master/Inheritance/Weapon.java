@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.lang.String;
 public class Weapon extends Item implements WeaponInterface
 {
-    private double atk;
+    private int atk;
     private double HP;
     public Weapon(String name, ArrayList stats){
         super(name, stats);
