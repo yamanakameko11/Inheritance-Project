@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class FatherOfBorg extends Enemy
 {
     public FatherOfBorg(String name, ArrayList stats){
-        super(name, stats);
+        super(name, stats); // LVL, HP ,MP, STR, INT
         stats.add(0, 1 + (int)(Math.random() * 5));
         stats.add(1, 8);
         stats.add(2, 4);
@@ -19,5 +19,9 @@ public class FatherOfBorg extends Enemy
     }
     
     public void flex(){
+        int dmg;
+        if (){
+        }
+        return dmg;
     }
 }
