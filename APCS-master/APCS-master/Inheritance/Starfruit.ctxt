@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Starfruit
+comment1.params=name\ stats
+comment1.target=Starfruit(java.lang.String,\ java.util.ArrayList)
+numComments=2
