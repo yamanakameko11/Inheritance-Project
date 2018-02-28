@@ -10,5 +10,7 @@ public class HornedMelon extends Food
 {
     public HornedMelon(String name, ArrayList stats){
        super(name, stats);
+       stats.add(0, 9);
+       stats.add(1, 9);
     }
 }

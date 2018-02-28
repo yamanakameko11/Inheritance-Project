@@ -17,11 +17,17 @@ public class FatherOfBorg extends Enemy
         stats.add(4, 4);
         name = "FATHER OF BORG";
     }
+
+    public void flex(){ // heals father
+        int pts = getINT() + (int)(Math.random() * getSTR());
+        setHP(pts);
+        System.out.println("Father of Borg heals " + pts + " HP.");
+    }
     
-    public void flex(){
-        int dmg;
-        if (){
+    public void shellShock(Player player){
+        if (getHP() >= player.getHP()){
+            int dmg = -1 + (int)(Math.random() * -getINT());
+            player.setHP(dmg);
         }
-        return dmg;
     }
 }

@@ -16,4 +16,20 @@ abstract class Food extends Item
         stats.add(MP);
     }
     
+    public int getHP(){
+        return HP;
+    }
+    
+    public int getMP(){
+        return MP;
+    }
+    
+    public void consume(Player player){
+        System.out.println("You consume the sustenance.");
+        player.setHP(getHP());
+        player.setMP(getMP());
+        player.getName();
+        System.out.println("HP:" + player.getHP());
+        System.out.println("MP:" + player.getHP());
+    }
 }

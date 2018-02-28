@@ -10,5 +10,7 @@ public class Espression extends Food
 {
     public Espression(String name, ArrayList stats){
        super(name, stats);
+       stats.add(0, 4);
+       stats.add(1, 10);
     }
 }

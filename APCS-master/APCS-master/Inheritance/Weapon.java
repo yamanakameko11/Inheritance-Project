@@ -24,10 +24,8 @@ abstract class Weapon extends Item implements WeaponInterface
         return dmg;
     }
 
-    public boolean parry(){
-        double str = atk + HP;
-        double var = 0 + (int)(Math.random() * str);
-        if(var > HP/2){
+    public boolean parry(Player player, Enemy enemy){
+        if(player.getSTR() > enemy.getSTR()){
             return true;
         } else{
             return false;

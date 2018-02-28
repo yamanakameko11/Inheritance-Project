@@ -4,4 +4,6 @@ comment1.params=name\ stats
 comment1.target=FatherOfBorg(java.lang.String,\ java.util.ArrayList)
 comment2.params=
 comment2.target=void\ flex()
-numComments=3
+comment3.params=player
+comment3.target=void\ shellShock(Player)
+numComments=4

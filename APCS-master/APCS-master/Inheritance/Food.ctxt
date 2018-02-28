@@ -2,4 +2,10 @@
 comment0.target=Food
 comment1.params=name\ stats
 comment1.target=Food(java.lang.String,\ java.util.ArrayList)
-numComments=2
+comment2.params=
+comment2.target=int\ getHP()
+comment3.params=
+comment3.target=int\ getMP()
+comment4.params=player
+comment4.target=void\ consume(Player)
+numComments=5

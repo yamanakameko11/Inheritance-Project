@@ -8,13 +8,13 @@
 import java.util.ArrayList;
 public abstract class Character implements CharacterInterface
 {
-    private String name;
-    private ArrayList stats; // LVL, HP ,MP, STR, INT
-    private int LVL;
-    private int HP;
-    private int MP;
-    private int STR;
-    private int INT;
+    String name;
+    ArrayList stats; // LVL, HP ,MP, STR, INT
+    int LVL;
+    int HP;
+    int MP;
+    int STR;
+    int INT;
     public Character(String name, ArrayList stats){
         this.name = name;
         this.stats = new ArrayList<Integer>();
@@ -51,5 +51,15 @@ public abstract class Character implements CharacterInterface
     
     public int getINT(){
         return (Integer)stats.get(4);
+    }
+    
+    public void setHP(int x){
+        int temp = getHP() + x;
+        stats.add(1, temp);
+    }
+    
+    public void setMP(int x){
+        int temp = getHP() + x;
+        stats.add(2, temp);
     }
 }
