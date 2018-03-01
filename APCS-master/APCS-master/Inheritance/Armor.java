@@ -10,18 +10,19 @@ abstract class Armor extends Item implements DefenseCommands
 {
     int str;
     int HP;
+    boolean end;
     public Armor(String name, ArrayList stats){
         super(name, stats); // LVL, HP ,MP, STR, INT
         stats.add(str);
         stats.add(HP);
     }
     
-    public boolean blocked(){
-        int x = str + (int)(Math.random() * (HP*2)); //70% chance of blocking all attacks
-        if (x > (str/2)){
-            return true;
-        } else{
-            return false;
+    public boolean blocked(Enemy enemy){
+        if (enemy.getSTR() > str){
+            end = false;
+        } else {
+            end = true;
         }
+        return end;
     }
 }
