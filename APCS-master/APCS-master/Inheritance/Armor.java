@@ -17,8 +17,8 @@ abstract class Armor extends Item implements DefenseCommands
         stats.add(HP);
     }
     
-    public boolean blocked(Enemy enemy){
-        if (enemy.getSTR() > str){
+    public boolean blocked(){
+        if (HP > str){
             end = false;
         } else {
             end = true;

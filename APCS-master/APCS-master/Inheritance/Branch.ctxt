@@ -1,7 +1,5 @@
 #BlueJ class context
 comment0.target=Branch
-comment1.params=name\ stats
-comment1.target=Branch(java.lang.String,\ java.util.ArrayList)
-comment2.params=
-comment2.target=void\ fireLance()
-numComments=3
+comment1.params=name\ stats\ HP\ atk
+comment1.target=Branch(java.lang.String,\ java.util.ArrayList,\ double,\ int)
+numComments=2

@@ -2,6 +2,6 @@
 comment0.target=Armor
 comment1.params=name\ stats
 comment1.target=Armor(java.lang.String,\ java.util.ArrayList)
-comment2.params=enemy
-comment2.target=boolean\ blocked(Enemy)
+comment2.params=
+comment2.target=boolean\ blocked()
 numComments=3

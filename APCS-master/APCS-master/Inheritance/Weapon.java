@@ -9,14 +9,13 @@ import java.util.ArrayList;
 import java.lang.String;
 abstract class Weapon extends Item implements WeaponInterface
 {
-    private int atk;
     private double HP;
-    public Weapon(String name, ArrayList stats){
+    private int atk;
+    public Weapon(String name, ArrayList stats, double HP, int atk){
         super(name, stats);
-        stats.add(atk);
         stats.add(HP);
+        stats.add(atk);
     }
-    
 
     public int attack(){
         int dmg = atk + (int)(Math.random() * (atk*2));
@@ -24,8 +23,9 @@ abstract class Weapon extends Item implements WeaponInterface
         return dmg;
     }
 
-    public boolean parry(Player player, Enemy enemy){
-        if(player.getSTR() > enemy.getSTR()){
+    public boolean parry(){
+        int p = 1 + (int)(Math.random() * (atk*2));
+        if(p > HP/2){
             return true;
         } else{
             return false;

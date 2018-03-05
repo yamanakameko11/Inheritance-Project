@@ -14,6 +14,7 @@ abstract class Item implements ItemInterface{
     public Item(String name, ArrayList stats){
         this.name = name;
         this.stats = new ArrayList();
+        stats.add(name);
     }
 
     public String getName(){

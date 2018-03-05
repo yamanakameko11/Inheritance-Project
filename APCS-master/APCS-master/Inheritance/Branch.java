@@ -8,13 +8,10 @@
 import java.util.ArrayList;
 public class Branch extends Weapon
 {
-    public Branch(String name, ArrayList stats){
-        super(name, stats);
-        stats.add(0, 4);
+    public Branch(String name, ArrayList stats, double HP, int atk){ // name, HP, atk
+        super(name, stats, HP, atk);
+        stats.add(0, "BRANCH");
         stats.add(1, 15);
-    }
-    
-    public void fireLance(){ // attack deals double damamge, loses half weapon HP
-        int x;
+        stats.add(2, 4);
     }
 }
