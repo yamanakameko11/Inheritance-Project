@@ -8,9 +8,10 @@
 import java.util.ArrayList;
 public class FruitRollUp extends Weapon
 {
-    public FruitRollUp(String name, ArrayList stats){
-        super(name, stats);
-        stats.add(0, 15);
-        stats.add(1, 5);
+    public FruitRollUp(String name, ArrayList stats, double HP, int atk){
+        super(name, stats, HP, atk);
+        name = "FRUIT ROLL UP";
+        HP = 7;
+        atk = 15;
     }
 }

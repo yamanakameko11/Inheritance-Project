@@ -8,9 +8,10 @@
 import java.util.ArrayList;
 public class Knife extends Weapon
 {
-    public Knife(String name, ArrayList stats){
-        super(name, stats);
-        stats.add(0, 7);
-        stats.add(1, 20);
+    public Knife(String name, ArrayList stats, double HP, int atk){
+        super(name, stats, HP, atk);
+        name = "KNIFE";
+        HP = 20;
+        atk = 7;
     }
 }

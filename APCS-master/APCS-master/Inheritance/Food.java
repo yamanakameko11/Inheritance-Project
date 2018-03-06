@@ -10,8 +10,10 @@ abstract class Food extends Item
 {
     int HP;
     int MP;
-    public Food(String name, ArrayList stats){
+    public Food(String name, ArrayList stats, int HP, int MP){
         super(name, stats); 
+        this.HP = HP;
+        this.MP = MP;
         stats.add(HP);
         stats.add(MP);
     }

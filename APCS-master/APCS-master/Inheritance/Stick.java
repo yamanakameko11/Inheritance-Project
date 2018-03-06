@@ -8,9 +8,10 @@
 import java.util.ArrayList;
 public class Stick extends Weapon
 {
-    public Stick(String name, ArrayList stats){
-        super(name, stats);
-        stats.add(0, 2);
-        stats.add(1, 10);
+    public Stick(String name, ArrayList stats, double HP, int atk){
+        super(name, stats, HP, atk);
+        name = "STICK";
+        HP = 8;
+        atk = 2;
     }
 }

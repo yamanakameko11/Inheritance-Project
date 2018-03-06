@@ -8,9 +8,10 @@
 import java.util.ArrayList;
 public class Starfruit extends Food
 {
-   public Starfruit(String name, ArrayList stats){
-       super(name, stats); //HP, MP
-       stats.add(0, 5);
-       stats.add(0, 5);
+   public Starfruit(String name, ArrayList stats, int HP, int MP){
+       super(name, stats, HP, MP); //HP, MP
+       name = "STARFRUIT";
+       HP = 2;
+       MP = 2;
     }
 }

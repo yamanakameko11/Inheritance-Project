@@ -1,5 +1,5 @@
 #BlueJ class context
 comment0.target=Stick
-comment1.params=name\ stats
-comment1.target=Stick(java.lang.String,\ java.util.ArrayList)
+comment1.params=name\ stats\ HP\ atk
+comment1.target=Stick(java.lang.String,\ java.util.ArrayList,\ double,\ int)
 numComments=2

@@ -53,13 +53,23 @@ public abstract class Character implements CharacterInterface
         return (Integer)stats.get(4);
     }
     
+    public void setLVL(){ // PLAYER LEVELS UP
+        LVL++;
+    }
+    
     public void setHP(int x){
-        int temp = getHP() + x;
-        stats.add(1, temp);
+        HP += x;
     }
     
     public void setMP(int x){
-        int temp = getHP() + x;
-        stats.add(2, temp);
+        HP += x;
+    }
+    
+    public void setSTR(int x){
+        STR += x;
+    }
+    
+    public void setINT(int x){
+        INT += x;
     }
 }

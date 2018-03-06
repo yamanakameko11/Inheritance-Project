@@ -10,8 +10,8 @@ public class Branch extends Weapon
 {
     public Branch(String name, ArrayList stats, double HP, int atk){ // name, HP, atk
         super(name, stats, HP, atk);
-        stats.add(0, "BRANCH");
-        stats.add(1, 15);
-        stats.add(2, 4);
+        name = "BRANCH";
+        HP = 15;
+        atk = 3;
     }
 }

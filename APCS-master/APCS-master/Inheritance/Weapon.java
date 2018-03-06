@@ -13,6 +13,8 @@ abstract class Weapon extends Item implements WeaponInterface
     private int atk;
     public Weapon(String name, ArrayList stats, double HP, int atk){
         super(name, stats);
+        this.atk = atk;
+        this.HP = HP;
         stats.add(HP);
         stats.add(atk);
     }
@@ -30,5 +32,21 @@ abstract class Weapon extends Item implements WeaponInterface
         } else{
             return false;
         }
+    }
+
+    public int getAtk(){
+        return atk;
+    }
+
+    public void setAtk(double x){
+        atk += x;
+    }
+
+    public double getHP(){
+        return HP;
+    }
+
+    public void setHP(int x){
+        HP += x;
     }
 }

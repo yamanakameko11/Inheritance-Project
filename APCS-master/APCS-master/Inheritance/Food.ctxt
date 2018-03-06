@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Food
-comment1.params=name\ stats
-comment1.target=Food(java.lang.String,\ java.util.ArrayList)
+comment1.params=name\ stats\ HP\ MP
+comment1.target=Food(java.lang.String,\ java.util.ArrayList,\ int,\ int)
 comment2.params=
 comment2.target=int\ getHP()
 comment3.params=

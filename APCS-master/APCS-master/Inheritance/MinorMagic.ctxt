@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=MinorMagic
+comment1.params=name\ stats\ HP\ MP\ STR
+comment1.target=MinorMagic(java.lang.String,\ java.util.ArrayList,\ int,\ int,\ int)
+numComments=2

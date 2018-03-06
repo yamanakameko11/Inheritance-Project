@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Claws
+comment1.params=name\ stats\ HP\ atk
+comment1.target=Claws(java.lang.String,\ java.util.ArrayList,\ double,\ int)
+numComments=2
