@@ -8,14 +8,14 @@
 import java.util.ArrayList;
 public class FatherOfBorg extends Enemy
 {
-    public FatherOfBorg(String name, ArrayList stats){
-        super(name, stats); // LVL, HP ,MP, STR, INT
-        stats.add(0, 1 + (int)(Math.random() * 5));
-        stats.add(1, 8);
-        stats.add(2, 4);
-        stats.add(3, 8);
-        stats.add(4, 4);
+    public FatherOfBorg(String name, int LVL, int HP, int MP, int STR, int INT){
+        super(name, LVL, HP, MP, STR, INT); // LVL, HP ,MP, STR, INT
         name = "FATHER OF BORG";
+        LVL = 1 + (int)(Math.random() * 5);
+        HP = 14;
+        MP = 0;
+        STR = 8;
+        INT = 4;
     }
 
     public void flex(){ // heals father
@@ -23,11 +23,17 @@ public class FatherOfBorg extends Enemy
         setHP(pts);
         System.out.println("Father of Borg heals " + pts + " HP.");
     }
-    
+
     public void shellShock(Player player){
         if (getHP() >= player.getHP()){
             int dmg = -1 + (int)(Math.random() * -getINT());
             player.setHP(dmg);
+            if (dmg > INT/2){
+                System.out.println("FATHER OF BORG deals minor damage.");
+            }else{
+                System.out.println("FATHER OF BORG deals soem damage.");
+            }
+            System.out.println("PLAYER HP: " + player.getHP());
         }
     }
 }

@@ -8,9 +8,9 @@
 import java.util.ArrayList;
 public class MothersCloak extends Armor
 {
-   public MothersCloak(String name, ArrayList stats){
-        super(name, stats);
-        stats.add(0, 11);
-        stats.add(1, 50);
+   public MothersCloak(String name, ArrayList stats, int str){
+        super(name, stats, str);
+        name = "MOTHER'S CLOAK";
+        str = 10;
     }
 }

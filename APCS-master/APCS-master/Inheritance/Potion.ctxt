@@ -2,6 +2,12 @@
 comment0.target=Potion
 comment1.params=name\ stats\ HP\ MP\ STR
 comment1.target=Potion(java.lang.String,\ java.util.ArrayList,\ int,\ int,\ int)
-comment2.params=
-comment2.target=void\ heal()
-numComments=3
+comment2.params=player\ potion
+comment2.target=void\ heal(Player,\ Potion)
+comment3.params=
+comment3.target=int\ getHP()
+comment4.params=
+comment4.target=int\ getMP()
+comment5.params=
+comment5.target=int\ getSTR()
+numComments=6

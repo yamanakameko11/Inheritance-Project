@@ -8,8 +8,8 @@
 import java.util.ArrayList;
 public class Enemy extends Character
 {
-    public Enemy(String name, ArrayList stats){ // LVL, HP ,MP, STR, INT
-        super(name, stats);
+    public Enemy(String name, int LVL, int HP, int MP, int STR, int INT){ // LVL, HP ,MP, STR, INT
+        super(name, LVL, HP, MP, STR, INT);
     }
     
 }

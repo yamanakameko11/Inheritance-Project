@@ -1,9 +1,7 @@
 #BlueJ class context
 comment0.target=Player
-comment1.params=name\ stats
-comment1.target=Player(java.lang.String,\ java.util.ArrayList)
+comment1.params=name\ LVL\ HP\ MP\ STR\ INT
+comment1.target=Player(java.lang.String,\ int,\ int,\ int,\ int,\ int)
 comment2.params=
 comment2.target=void\ playerName()
-comment3.params=Food
-comment3.target=void\ consume(Item)
-numComments=4
+numComments=3

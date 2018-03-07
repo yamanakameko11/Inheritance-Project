@@ -20,8 +20,26 @@ public class Potion extends Item
         stats.add(MP);
         stats.add(STR);
     }
-    
-    public void heal(){
-        System.out.println("You drink the potion.");
+
+    public void heal(Player player, Potion potion){
+        System.out.println("You drink the potion. Nice.");
+        player.setHP(potion.getHP());
+        player.setMP(potion.getMP());
+        player.setSTR(potion.getSTR());
+        System.out.println("PLAYER HP: " + player.getHP());
+        System.out.println("PLAYER MP: " + player.getMP());
+        System.out.println("PLAYER STR: " + player.getSTR());
+    }
+
+    public int getHP(){
+        return HP;
+    }
+
+    public int getMP(){
+        return MP;
+    }
+
+    public int getSTR(){
+        return STR;
     }
 }

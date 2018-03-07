@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Familiar
+comment1.params=name\ LVL\ HP\ MP\ STR\ INT
+comment1.target=Familiar(java.lang.String,\ int,\ int,\ int,\ int,\ int)
+comment2.params=player
+comment2.target=void\ CastHealing(Player)
+comment3.params=player
+comment3.target=void\ MagicRestoration(Player)
+numComments=4

@@ -1,5 +1,5 @@
 #BlueJ class context
 comment0.target=Quats
-comment1.params=name\ stats
-comment1.target=Quats(java.lang.String,\ java.util.ArrayList)
+comment1.params=name\ stats\ HP\ MP
+comment1.target=Quats(java.lang.String,\ java.util.ArrayList,\ int,\ int)
 numComments=2

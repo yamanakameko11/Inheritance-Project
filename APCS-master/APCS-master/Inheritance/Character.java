@@ -15,9 +15,14 @@ public abstract class Character implements CharacterInterface
     int MP;
     int STR;
     int INT;
-    public Character(String name, ArrayList stats){
+    public Character(String name, int LVL, int HP, int MP, int STR, int INT){
         this.name = name;
         this.stats = new ArrayList<Integer>();
+        this.LVL = LVL;
+        this.HP = HP;
+        this.MP = MP;
+        this.STR = STR;
+        this.INT = INT;
         stats.add(LVL);
         stats.add(HP);
         stats.add(MP);

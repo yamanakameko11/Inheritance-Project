@@ -8,9 +8,9 @@
 import java.util.ArrayList;
 public class MoonSocks extends Armor
 {
-   public MoonSocks(String name, ArrayList stats){
-        super(name, stats);
-        stats.add(0, 4);
-        stats.add(1, 50);
+   public MoonSocks(String name, ArrayList stats, int str){
+        super(name, stats, str);
+        name = "MOON SOCKS";
+        str = 7;
     }
 }

@@ -14,14 +14,13 @@ public class Player extends Character
     int MP;
     int STR;
     int INT;
-    public Player(String name, ArrayList stats){
-        super(name, stats); // LVL, HP ,MP, STR, INT
-        stats.add(1);
-        stats.add(10);
-        stats.add(10);
-        stats.add(5);
-        stats.add(5);
-        name = "";
+    public Player(String name, int LVL, int HP, int MP, int STR, int INT){
+        super(name, LVL, HP, MP, STR, INT); // LVL, HP ,MP, STR, INT
+        LVL = 1;
+        HP = 10;
+        MP = 10;
+        STR = 5;
+        INT = 5;
     }
 
     public void playerName(){
@@ -34,8 +33,5 @@ public class Player extends Character
                 state = true;
             } else{ state = false;}
         }
-    }
-    
-    public void consume(Item Food){
     }
 }
