@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=GelaTinMan
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GelaTinMan\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=name\ LVL\ HP\ MP\ STR\ INT
+comment1.target=GelaTinMan(java.lang.String,\ int,\ int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=GelaTinMan()
+comment3.params=player\ gelatinman
+comment3.target=void\ splatt(Player,\ GelaTinMan)
+numComments=4

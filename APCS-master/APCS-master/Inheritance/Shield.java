@@ -8,9 +8,9 @@
 import java.util.ArrayList;
 public class Shield extends Armor
 {
-   public Shield(String name, ArrayList stats){
-        super(name, stats);
-        stats.add(0, 6);
-        stats.add(1, 150);
+   public Shield(String name, ArrayList stats, int str){
+        super(name, stats, str);
+        name = "SHIELD";
+        str = 100;
     }
 }

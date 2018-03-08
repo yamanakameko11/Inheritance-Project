@@ -1,5 +1,5 @@
 #BlueJ class context
 comment0.target=Shield
-comment1.params=name\ stats
-comment1.target=Shield(java.lang.String,\ java.util.ArrayList)
+comment1.params=name\ stats\ str
+comment1.target=Shield(java.lang.String,\ java.util.ArrayList,\ int)
 numComments=2

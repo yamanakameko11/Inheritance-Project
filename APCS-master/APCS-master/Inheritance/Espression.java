@@ -8,9 +8,10 @@
 import java.util.ArrayList;
 public class Espression extends Food
 {
-    public Espression(String name, ArrayList stats){
-       super(name, stats);
-       stats.add(0, 4);
-       stats.add(1, 10);
+    public Espression(String name, ArrayList stats, int HP, int MP){
+       super(name, stats, HP, MP);
+       name = "Espression";
+       HP = 3;
+       MP = 5;
     }
 }

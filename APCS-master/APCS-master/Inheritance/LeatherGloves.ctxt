@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=LeatherGloves
+comment1.params=name\ stats\ str
+comment1.target=LeatherGloves(java.lang.String,\ java.util.ArrayList,\ int)
+numComments=2

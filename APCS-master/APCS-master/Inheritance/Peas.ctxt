@@ -1,5 +1,5 @@
 #BlueJ class context
 comment0.target=Peas
-comment1.params=name\ stats
-comment1.target=Peas(java.lang.String,\ java.util.ArrayList)
+comment1.params=name\ stats\ HP\ MP
+comment1.target=Peas(java.lang.String,\ java.util.ArrayList,\ int,\ int)
 numComments=2

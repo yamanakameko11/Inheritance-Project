@@ -5,19 +5,16 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-import java.util.ArrayList;
 import java.util.Random;
 public class Borg extends Enemy // enemy is an amalgamation of little fat bugs
 {
     int summon;
     public Borg(String name, int LVL, int HP, int MP, int STR, int INT){
         super(name, LVL, HP, MP, STR, INT); // LVL, HP ,MP, STR, INT
-        name = "BORG";
-        LVL = 1 + (int)(Math.random() * 2);
-        HP = 5;
-        MP = 0;
-        STR = 5;
-        INT = 1;
+    }
+    
+    public Borg(){
+        this("BORG", 3, 5, 0, 5, 1);
     }
 
     public void cry(Player player){ //drains MP

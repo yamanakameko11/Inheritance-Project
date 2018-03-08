@@ -6,7 +6,7 @@
  * @version (a version number or a date)
  */
 import java.util.ArrayList;
-public class Potion extends Item
+abstract class Potion extends Item
 {
     int HP;
     int MP;
