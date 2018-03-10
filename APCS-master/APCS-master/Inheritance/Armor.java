@@ -9,8 +9,8 @@ import java.util.ArrayList;
 abstract class Armor extends Item implements DefenseCommands
 {
     int str;
-    public Armor(String name, ArrayList stats, int str){
-        super(name, stats); // LVL, HP ,MP, STR, INT
+    public Armor(String name, int str){
+        super(name); // LVL, HP ,MP, STR, INT
         this.str = str;
         stats.add(str);
     }

@@ -9,11 +9,6 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class Player extends Character
 {
-    int LVL;
-    int HP;
-    int MP;
-    int STR;
-    int INT;
     public Player(String name, int LVL, int HP, int MP, int STR, int INT)
     {
         super(name, LVL, HP, MP, STR, INT); // LVL, HP ,MP, STR, INT
@@ -31,7 +26,7 @@ public class Player extends Character
         while (!state)
         {
             System.out.println("ENTER YOUR NAME: ");
-            name = ask.next().toUpperCase();
+            this.name = ask.next().toUpperCase();
             System.out.println("Your name is " + name + ", correct? Y/N");
             String confirm = ask.next().toUpperCase();
             if(confirm.equals("Y") || confirm.equals("YES"))

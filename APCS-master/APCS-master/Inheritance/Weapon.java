@@ -11,8 +11,8 @@ abstract class Weapon extends Item implements WeaponInterface
 {
     private double HP;
     private int atk;
-    public Weapon(String name, ArrayList stats, double HP, int atk){
-        super(name, stats);
+    public Weapon(String name, double HP, int atk){
+        super(name);
         this.atk = atk;
         this.HP = HP;
         stats.add(HP);
